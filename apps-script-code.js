@@ -147,89 +147,89 @@ function seedHistoricalData() {
 
   // --- JANUARY 2026 ---
   // Zomato orders (weekly settlements)
-  rows.push([now++, '2026-01-01', '2026-01-07', 'income', 'Zomato Order', 18500, 4625, 0, 0, 13875, '', 'Week 1 settlement']);
-  rows.push([now++, '2026-01-08', '2026-01-14', 'income', 'Zomato Order', 21200, 5300, 0, 0, 15900, '', 'Week 2 settlement']);
-  rows.push([now++, '2026-01-15', '2026-01-21', 'income', 'Zomato Order', 19800, 4950, 0, 0, 14850, '', 'Week 3 settlement']);
-  rows.push([now++, '2026-01-22', '2026-01-31', 'income', 'Zomato Order', 22400, 5600, 0, 0, 16800, '', 'Week 4 settlement']);
+  rows.push([now++, '2026-01-01', '2026-01-07', 'income', 'Zomato Order', 18500, 4625, 0, 0, 13875, '', 'Week 1 settlement', 'paid']);
+  rows.push([now++, '2026-01-08', '2026-01-14', 'income', 'Zomato Order', 21200, 5300, 0, 0, 15900, '', 'Week 2 settlement', 'paid']);
+  rows.push([now++, '2026-01-15', '2026-01-21', 'income', 'Zomato Order', 19800, 4950, 0, 0, 14850, '', 'Week 3 settlement', 'paid']);
+  rows.push([now++, '2026-01-22', '2026-01-31', 'income', 'Zomato Order', 22400, 5600, 0, 0, 16800, '', 'Week 4 settlement', 'paid']);
   // Swiggy orders
-  rows.push([now++, '2026-01-01', '2026-01-15', 'income', 'Swiggy Order', 15600, 3900, 0, 0, 11700, '', 'Bi-weekly settlement 1']);
-  rows.push([now++, '2026-01-16', '2026-01-31', 'income', 'Swiggy Order', 17200, 4300, 0, 0, 12900, '', 'Bi-weekly settlement 2']);
+  rows.push([now++, '2026-01-01', '2026-01-15', 'income', 'Swiggy Order', 15600, 3900, 0, 0, 11700, '', 'Bi-weekly settlement 1', 'paid']);
+  rows.push([now++, '2026-01-16', '2026-01-31', 'income', 'Swiggy Order', 17200, 4300, 0, 0, 12900, '', 'Bi-weekly settlement 2', 'paid']);
   // Direct orders
-  rows.push([now++, '2026-01-05', '', 'income', 'Direct Order', 3200, 0, 0, 0, 3200, '', 'Walk-in orders']);
-  rows.push([now++, '2026-01-12', '', 'income', 'Direct Order', 2800, 0, 0, 0, 2800, '', 'Walk-in + phone orders']);
-  rows.push([now++, '2026-01-19', '', 'income', 'Direct Order', 4500, 0, 0, 200, 4300, '', 'Sunday rush + delivery']);
+  rows.push([now++, '2026-01-05', '', 'income', 'Direct Order', 3200, 0, 0, 0, 3200, '', 'Walk-in orders', 'paid']);
+  rows.push([now++, '2026-01-12', '', 'income', 'Direct Order', 2800, 0, 0, 0, 2800, '', 'Walk-in + phone orders', 'paid']);
+  rows.push([now++, '2026-01-19', '', 'income', 'Direct Order', 4500, 0, 0, 200, 4300, '', 'Sunday rush + delivery', 'paid']);
   rows.push([now++, '2026-01-26', '', 'income', 'Direct Order', 3600, 0, 0, 150, 3450, '', 'Republic day special', 'paid']);
   // Catering
-  rows.push([now++, '2026-01-15', '', 'income', 'Catering', 12000, 0, 0, 0, 12000, '', 'Birthday party - 50 pax']);
+  rows.push([now++, '2026-01-15', '', 'income', 'Catering', 12000, 0, 0, 0, 12000, '', 'Birthday party - 50 pax', 'paid']);
   // Expenses Jan
-  rows.push([now++, '2026-01-02', '', 'expense', 'Raw Materials', 8500, 0, 0, 0, 8500, 'Rajesh', 'Vegetables & chicken']);
-  rows.push([now++, '2026-01-05', '', 'expense', 'Raw Materials', 6200, 0, 0, 0, 6200, 'Priya', 'Spices & oil bulk']);
-  rows.push([now++, '2026-01-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2']);
-  rows.push([now++, '2026-01-12', '', 'expense', 'Packaging', 3500, 0, 0, 0, 3500, 'Priya', 'Containers & bags']);
-  rows.push([now++, '2026-01-15', '', 'expense', 'Electricity', 4200, 0, 0, 0, 4200, 'Rajesh', 'Monthly bill']);
-  rows.push([now++, '2026-01-18', '', 'expense', 'Raw Materials', 7800, 0, 0, 0, 7800, 'Rajesh', 'Weekly restock']);
-  rows.push([now++, '2026-01-20', '', 'expense', 'Maid', 3000, 0, 0, 0, 3000, 'Priya', 'Kitchen cleaner salary']);
-  rows.push([now++, '2026-01-25', '', 'expense', 'Staff Salaries', 15000, 0, 0, 0, 15000, 'Rajesh', 'Cook - Suresh']);
-  rows.push([now++, '2026-01-25', '', 'expense', 'Staff Salaries', 12000, 0, 0, 0, 12000, 'Rajesh', 'Helper - Ramu']);
-  rows.push([now++, '2026-01-28', '', 'expense', 'Raw Materials', 5400, 0, 0, 0, 5400, 'Priya', 'Month-end restock']);
-  rows.push([now++, '2026-01-30', '', 'expense', 'Equipment', 4500, 0, 0, 0, 4500, 'Rajesh', 'New mixer grinder']);
+  rows.push([now++, '2026-01-02', '', 'expense', 'Raw Materials', 8500, 0, 0, 0, 8500, 'Rajesh', 'Vegetables & chicken', 'paid']);
+  rows.push([now++, '2026-01-05', '', 'expense', 'Raw Materials', 6200, 0, 0, 0, 6200, 'Priya', 'Spices & oil bulk', 'paid']);
+  rows.push([now++, '2026-01-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2', 'paid']);
+  rows.push([now++, '2026-01-12', '', 'expense', 'Packaging', 3500, 0, 0, 0, 3500, 'Priya', 'Containers & bags', 'paid']);
+  rows.push([now++, '2026-01-15', '', 'expense', 'Electricity', 4200, 0, 0, 0, 4200, 'Rajesh', 'Monthly bill', 'paid']);
+  rows.push([now++, '2026-01-18', '', 'expense', 'Raw Materials', 7800, 0, 0, 0, 7800, 'Rajesh', 'Weekly restock', 'paid']);
+  rows.push([now++, '2026-01-20', '', 'expense', 'Maid', 3000, 0, 0, 0, 3000, 'Priya', 'Kitchen cleaner salary', 'paid']);
+  rows.push([now++, '2026-01-25', '', 'expense', 'Staff Salaries', 15000, 0, 0, 0, 15000, 'Rajesh', 'Cook - Suresh', 'paid']);
+  rows.push([now++, '2026-01-25', '', 'expense', 'Staff Salaries', 12000, 0, 0, 0, 12000, 'Rajesh', 'Helper - Ramu', 'paid']);
+  rows.push([now++, '2026-01-28', '', 'expense', 'Raw Materials', 5400, 0, 0, 0, 5400, 'Priya', 'Month-end restock', 'paid']);
+  rows.push([now++, '2026-01-30', '', 'expense', 'Equipment', 4500, 0, 0, 0, 4500, 'Rajesh', 'New mixer grinder', 'paid']);
 
   // --- FEBRUARY 2026 ---
   // Zomato
-  rows.push([now++, '2026-02-01', '2026-02-07', 'income', 'Zomato Order', 20100, 5025, 0, 0, 15075, '', 'Week 1']);
-  rows.push([now++, '2026-02-08', '2026-02-14', 'income', 'Zomato Order', 24500, 6125, 0, 0, 18375, '', 'Week 2 - Valentines boost']);
-  rows.push([now++, '2026-02-15', '2026-02-21', 'income', 'Zomato Order', 19200, 4800, 0, 0, 14400, '', 'Week 3']);
-  rows.push([now++, '2026-02-22', '2026-02-28', 'income', 'Zomato Order', 21800, 5450, 0, 0, 16350, '', 'Week 4']);
+  rows.push([now++, '2026-02-01', '2026-02-07', 'income', 'Zomato Order', 20100, 5025, 0, 0, 15075, '', 'Week 1', 'paid']);
+  rows.push([now++, '2026-02-08', '2026-02-14', 'income', 'Zomato Order', 24500, 6125, 0, 0, 18375, '', 'Week 2 - Valentines boost', 'paid']);
+  rows.push([now++, '2026-02-15', '2026-02-21', 'income', 'Zomato Order', 19200, 4800, 0, 0, 14400, '', 'Week 3', 'paid']);
+  rows.push([now++, '2026-02-22', '2026-02-28', 'income', 'Zomato Order', 21800, 5450, 0, 0, 16350, '', 'Week 4', 'paid']);
   // Swiggy
-  rows.push([now++, '2026-02-01', '2026-02-14', 'income', 'Swiggy Order', 16800, 4200, 0, 0, 12600, '', 'Bi-weekly 1']);
-  rows.push([now++, '2026-02-15', '2026-02-28', 'income', 'Swiggy Order', 18500, 4625, 0, 0, 13875, '', 'Bi-weekly 2']);
+  rows.push([now++, '2026-02-01', '2026-02-14', 'income', 'Swiggy Order', 16800, 4200, 0, 0, 12600, '', 'Bi-weekly 1', 'paid']);
+  rows.push([now++, '2026-02-15', '2026-02-28', 'income', 'Swiggy Order', 18500, 4625, 0, 0, 13875, '', 'Bi-weekly 2', 'paid']);
   // Direct
-  rows.push([now++, '2026-02-07', '', 'income', 'Direct Order', 3800, 0, 0, 0, 3800, '', 'Walk-in orders']);
-  rows.push([now++, '2026-02-14', '', 'income', 'Direct Order', 6200, 0, 0, 300, 5900, '', 'Valentines day special']);
-  rows.push([now++, '2026-02-21', '', 'income', 'Direct Order', 3100, 0, 0, 0, 3100, '', 'Regular walk-ins']);
-  rows.push([now++, '2026-02-28', '', 'income', 'Direct Order', 2900, 0, 0, 0, 2900, '', 'End of month']);
+  rows.push([now++, '2026-02-07', '', 'income', 'Direct Order', 3800, 0, 0, 0, 3800, '', 'Walk-in orders', 'paid']);
+  rows.push([now++, '2026-02-14', '', 'income', 'Direct Order', 6200, 0, 0, 300, 5900, '', 'Valentines day special', 'paid']);
+  rows.push([now++, '2026-02-21', '', 'income', 'Direct Order', 3100, 0, 0, 0, 3100, '', 'Regular walk-ins', 'paid']);
+  rows.push([now++, '2026-02-28', '', 'income', 'Direct Order', 2900, 0, 0, 0, 2900, '', 'End of month', 'paid']);
   // Special event
-  rows.push([now++, '2026-02-14', '', 'income', 'Special Events', 8500, 0, 0, 0, 8500, '', 'Valentines dinner package x25']);
+  rows.push([now++, '2026-02-14', '', 'income', 'Special Events', 8500, 0, 0, 0, 8500, '', 'Valentines dinner package x25', 'paid']);
   // Pending order
   rows.push([now++, '2026-02-20', '', 'income', 'Catering', 15000, 0, 0, 0, 15000, '', 'Office party - pending payment', 'pending']);
   // Expenses Feb
-  rows.push([now++, '2026-02-01', '', 'expense', 'Raw Materials', 9200, 0, 0, 0, 9200, 'Rajesh', 'Chicken & mutton bulk']);
-  rows.push([now++, '2026-02-06', '', 'expense', 'Raw Materials', 5800, 0, 0, 0, 5800, 'Priya', 'Vegetables & dairy']);
-  rows.push([now++, '2026-02-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2']);
-  rows.push([now++, '2026-02-12', '', 'expense', 'Packaging', 4200, 0, 0, 0, 4200, 'Priya', 'Valentine special boxes']);
-  rows.push([now++, '2026-02-15', '', 'expense', 'Electricity', 4600, 0, 0, 0, 4600, 'Rajesh', 'Monthly bill']);
-  rows.push([now++, '2026-02-18', '', 'expense', 'Raw Materials', 8100, 0, 0, 0, 8100, 'Rajesh', 'Weekly restock']);
-  rows.push([now++, '2026-02-20', '', 'expense', 'Maid', 3000, 0, 0, 0, 3000, 'Priya', 'Kitchen cleaner salary']);
-  rows.push([now++, '2026-02-25', '', 'expense', 'Staff Salaries', 15000, 0, 0, 0, 15000, 'Rajesh', 'Cook - Suresh']);
-  rows.push([now++, '2026-02-25', '', 'expense', 'Staff Salaries', 12000, 0, 0, 0, 12000, 'Rajesh', 'Helper - Ramu']);
-  rows.push([now++, '2026-02-27', '', 'expense', 'Marketing', 3500, 0, 0, 0, 3500, 'Priya', 'Instagram ads & flyers']);
-  rows.push([now++, '2026-02-28', '', 'expense', 'Raw Materials', 6500, 0, 0, 0, 6500, 'Priya', 'Month-end restock']);
+  rows.push([now++, '2026-02-01', '', 'expense', 'Raw Materials', 9200, 0, 0, 0, 9200, 'Rajesh', 'Chicken & mutton bulk', 'paid']);
+  rows.push([now++, '2026-02-06', '', 'expense', 'Raw Materials', 5800, 0, 0, 0, 5800, 'Priya', 'Vegetables & dairy', 'paid']);
+  rows.push([now++, '2026-02-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2', 'paid']);
+  rows.push([now++, '2026-02-12', '', 'expense', 'Packaging', 4200, 0, 0, 0, 4200, 'Priya', 'Valentine special boxes', 'paid']);
+  rows.push([now++, '2026-02-15', '', 'expense', 'Electricity', 4600, 0, 0, 0, 4600, 'Rajesh', 'Monthly bill', 'paid']);
+  rows.push([now++, '2026-02-18', '', 'expense', 'Raw Materials', 8100, 0, 0, 0, 8100, 'Rajesh', 'Weekly restock', 'paid']);
+  rows.push([now++, '2026-02-20', '', 'expense', 'Maid', 3000, 0, 0, 0, 3000, 'Priya', 'Kitchen cleaner salary', 'paid']);
+  rows.push([now++, '2026-02-25', '', 'expense', 'Staff Salaries', 15000, 0, 0, 0, 15000, 'Rajesh', 'Cook - Suresh', 'paid']);
+  rows.push([now++, '2026-02-25', '', 'expense', 'Staff Salaries', 12000, 0, 0, 0, 12000, 'Rajesh', 'Helper - Ramu', 'paid']);
+  rows.push([now++, '2026-02-27', '', 'expense', 'Marketing', 3500, 0, 0, 0, 3500, 'Priya', 'Instagram ads & flyers', 'paid']);
+  rows.push([now++, '2026-02-28', '', 'expense', 'Raw Materials', 6500, 0, 0, 0, 6500, 'Priya', 'Month-end restock', 'paid']);
 
   // --- MARCH 2026 ---
   // Zomato
-  rows.push([now++, '2026-03-01', '2026-03-07', 'income', 'Zomato Order', 22800, 5700, 0, 0, 17100, '', 'Week 1 - Holi season']);
-  rows.push([now++, '2026-03-08', '2026-03-14', 'income', 'Zomato Order', 25200, 6300, 0, 0, 18900, '', 'Week 2 - Holi week']);
-  rows.push([now++, '2026-03-15', '2026-03-19', 'income', 'Zomato Order', 12500, 3125, 0, 0, 9375, '', 'Partial week 3']);
+  rows.push([now++, '2026-03-01', '2026-03-07', 'income', 'Zomato Order', 22800, 5700, 0, 0, 17100, '', 'Week 1 - Holi season', 'paid']);
+  rows.push([now++, '2026-03-08', '2026-03-14', 'income', 'Zomato Order', 25200, 6300, 0, 0, 18900, '', 'Week 2 - Holi week', 'paid']);
+  rows.push([now++, '2026-03-15', '2026-03-19', 'income', 'Zomato Order', 12500, 3125, 0, 0, 9375, '', 'Partial week 3', 'paid']);
   // Swiggy
-  rows.push([now++, '2026-03-01', '2026-03-14', 'income', 'Swiggy Order', 19200, 4800, 0, 0, 14400, '', 'Bi-weekly 1']);
+  rows.push([now++, '2026-03-01', '2026-03-14', 'income', 'Swiggy Order', 19200, 4800, 0, 0, 14400, '', 'Bi-weekly 1', 'paid']);
   // Direct
-  rows.push([now++, '2026-03-02', '', 'income', 'Direct Order', 4200, 0, 0, 0, 4200, '', 'Walk-in orders']);
-  rows.push([now++, '2026-03-10', '', 'income', 'Direct Order', 3500, 0, 0, 150, 3350, '', 'Phone + delivery']);
-  rows.push([now++, '2026-03-14', '', 'income', 'Catering', 18000, 0, 0, 0, 18000, '', 'Holi party catering - 80 pax']);
+  rows.push([now++, '2026-03-02', '', 'income', 'Direct Order', 4200, 0, 0, 0, 4200, '', 'Walk-in orders', 'paid']);
+  rows.push([now++, '2026-03-10', '', 'income', 'Direct Order', 3500, 0, 0, 150, 3350, '', 'Phone + delivery', 'paid']);
+  rows.push([now++, '2026-03-14', '', 'income', 'Catering', 18000, 0, 0, 0, 18000, '', 'Holi party catering - 80 pax', 'paid']);
   // Expenses Mar
-  rows.push([now++, '2026-03-01', '', 'expense', 'Raw Materials', 10500, 0, 0, 0, 10500, 'Rajesh', 'Holi season bulk']);
-  rows.push([now++, '2026-03-05', '', 'expense', 'Raw Materials', 4800, 0, 0, 0, 4800, 'Priya', 'Sweets ingredients']);
-  rows.push([now++, '2026-03-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2']);
-  rows.push([now++, '2026-03-12', '', 'expense', 'Packaging', 3800, 0, 0, 0, 3800, 'Priya', 'Containers restock']);
-  rows.push([now++, '2026-03-15', '', 'expense', 'Electricity', 4800, 0, 0, 0, 4800, 'Rajesh', 'Monthly bill']);
-  rows.push([now++, '2026-03-18', '', 'expense', 'Raw Materials', 7200, 0, 0, 0, 7200, 'Rajesh', 'Weekly restock']);
+  rows.push([now++, '2026-03-01', '', 'expense', 'Raw Materials', 10500, 0, 0, 0, 10500, 'Rajesh', 'Holi season bulk', 'paid']);
+  rows.push([now++, '2026-03-05', '', 'expense', 'Raw Materials', 4800, 0, 0, 0, 4800, 'Priya', 'Sweets ingredients', 'paid']);
+  rows.push([now++, '2026-03-10', '', 'expense', 'Gas', 2800, 0, 0, 0, 2800, 'Rajesh', 'Commercial LPG x2', 'paid']);
+  rows.push([now++, '2026-03-12', '', 'expense', 'Packaging', 3800, 0, 0, 0, 3800, 'Priya', 'Containers restock', 'paid']);
+  rows.push([now++, '2026-03-15', '', 'expense', 'Electricity', 4800, 0, 0, 0, 4800, 'Rajesh', 'Monthly bill', 'paid']);
+  rows.push([now++, '2026-03-18', '', 'expense', 'Raw Materials', 7200, 0, 0, 0, 7200, 'Rajesh', 'Weekly restock', 'paid']);
 
   // Investment
-  rows.push([now++, '2026-01-01', '', 'investment', 'Capital', 50000, 0, 0, 0, 50000, 'Rajesh', 'Initial kitchen setup']);
-  rows.push([now++, '2026-01-01', '', 'investment', 'Capital', 30000, 0, 0, 0, 30000, 'Priya', 'Initial kitchen setup']);
+  rows.push([now++, '2026-01-01', '', 'investment', 'Capital', 50000, 0, 0, 0, 50000, 'Rajesh', 'Initial kitchen setup', 'paid']);
+  rows.push([now++, '2026-01-01', '', 'investment', 'Capital', 30000, 0, 0, 0, 30000, 'Priya', 'Initial kitchen setup', 'paid']);
 
   // Reimbursement
-  rows.push([now++, '2026-02-01', '', 'reimbursement', 'Reimbursement', 5000, 0, 0, 0, 5000, 'Priya', 'Jan expense settlement']);
+  rows.push([now++, '2026-02-01', '', 'reimbursement', 'Reimbursement', 5000, 0, 0, 0, 5000, 'Priya', 'Jan expense settlement', 'paid']);
 
   if (rows.length > 0) {
     var startRow = sheet.getLastRow() + 1;
